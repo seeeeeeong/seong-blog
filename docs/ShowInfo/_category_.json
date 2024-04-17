@@ -1,0 +1,8 @@
+{
+  "label": "공연 정보",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "공연 정보"
+  }
+}

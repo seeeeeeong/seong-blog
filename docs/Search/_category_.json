@@ -1,0 +1,8 @@
+{
+  "label": "통합검색",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "통합검색"
+  }
+}
