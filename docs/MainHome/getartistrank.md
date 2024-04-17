@@ -1,8 +1,7 @@
 ---
 sidebar_position: 4
 ---
-
-### 이달의 아티스트 TOP 5
+이달의 아티스트 TOP 5
 
 
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
