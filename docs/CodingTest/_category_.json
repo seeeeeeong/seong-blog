@@ -1,8 +1,7 @@
 {
-  "label": "codingtest",
+  "label": "코딩테스트",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "codingtest"
   }
 }
