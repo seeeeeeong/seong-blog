@@ -1,7 +1,8 @@
 {
-  "label": "코딩테스트",
+  "label": "메인 홈",
   "position": 3,
   "link": {
     "type": "generated-index",
+    "description": "메인 홈"
   }
 }
