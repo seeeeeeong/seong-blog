@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkseong_blog=self.webpackChunkseong_blog||[]).push([[5557],{8376:o=>{o.exports=JSON.parse('{"permalink":"/seong-blog/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

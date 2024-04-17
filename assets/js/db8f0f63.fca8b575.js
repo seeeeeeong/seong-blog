@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkseong_blog=self.webpackChunkseong_blog||[]).push([[4788],{9777:o=>{o.exports=JSON.parse('{"permalink":"/seong-blog/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

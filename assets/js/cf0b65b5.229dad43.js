@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkseong_blog=self.webpackChunkseong_blog||[]).push([[5886],{9750:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/seong-blog/blog/tags/facebook","allTagsPath":"/seong-blog/blog/tags","count":1,"unlisted":false}')}}]);
