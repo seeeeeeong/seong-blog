@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '이신성 블로그',
+  title: 'LEESINSEONG',
   tagline: '기술 블로그',
   favicon: 'img/favicon.ico',
 
@@ -58,7 +58,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'LEESINSEONG',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -68,9 +68,8 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '백엔드',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -82,7 +81,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Tutorial',
+          title: 'Docs',
           items: [
             {
               label: 'Tutorial',
@@ -110,10 +109,7 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
