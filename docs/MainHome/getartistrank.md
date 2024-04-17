@@ -31,22 +31,22 @@ sidebar_position: 4
     },
     {
       "id": 2,
-      "name": "artist",
+      "name": "artist2",
       "profileImage": "image1"
     },
     {
       "id": 3,
-      "name": "artist",
+      "name": "artist3",
       "profileImage": "image1"
     },
     {
       "id": 4,
-      "name": "artist",
+      "name": "artist4",
       "profileImage": "image1"
     },
     {
       "id": 5,
-      "name": "artist",
+      "name": "artist5",
       "profileImage": "image1"
     }
   ]
