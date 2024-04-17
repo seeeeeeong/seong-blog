@@ -5,7 +5,7 @@ sidebar_position: 3
 ### 티켓 오픈 임박
 
 
-> ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br>
+> ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
 > http://dev.officialhey.com/show/nearest
 
 <details markdown="1">
@@ -59,4 +59,4 @@ sidebar_position: 3
   ```
   </details>
 </details>
-<br>
+<br/>
