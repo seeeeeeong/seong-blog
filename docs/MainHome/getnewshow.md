@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-### NEW 공연
+# NEW 공연
 
 
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
