@@ -12,7 +12,6 @@ sidebar_position: 1
 <summary>api specification</summary>
 
 #### Parameters
-#### Path
 |  name   |  type  |             description             |     required     |
 |:-------:|:------:|:-----------------------------------:|:----------------:|
 |  page   |  Int   |             page, size              | **Not Required** |
@@ -36,7 +35,6 @@ sidebar_position: 1
       {
         "id": 3,
         "name": "show3",
-        "urlId": "url",
         "ticketOpenTime": 2024-04-17T19:00:00,
         "date": "2024-04-17T19:00:00",
         "poster": "https://example.com/image1.jpg",

@@ -51,7 +51,6 @@ sidebar_position: 3
         "icon": "interpark.png"
       }
     ],
-    "urlId": "dafafagagawg",
     "ticketOpenTime": "2024-04-03T17:44:00",
     "date": "2024-04-03T19:00:00",
     "strictedAge": 18,
