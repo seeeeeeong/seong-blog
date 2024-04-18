@@ -5,20 +5,17 @@ sidebar_position: 3
 # 티켓 오픈 임박
 
 
-> ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
+> ![](https://img.shields.io/static/v1?label=&message=GET&color=blue) <br/>
 > http://dev.officialhey.com/show/nearest
 
 <details markdown="1">
-<summary>detail</summary>
+<summary>api specification</summary>
 
-#### Parameters
-
-##### Body
 
 #### Response
 
   <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+  <summary>200 OK : 성공</summary>
 
   ```
   {

@@ -5,20 +5,17 @@ sidebar_position: 1
 # 지금 HOT 한 공연 Top 5
 
 
-> ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
+> ![](https://img.shields.io/static/v1?label=&message=GET&color=blue) <br/>
 > http://dev.officialhey.com/show/rank
 
 <details markdown="1">
-<summary>detail</summary>
+<summary>api specification</summary>
 
-#### Parameters
-
-##### Body
 
 #### Response
 
   <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+  <summary>200 OK : 성공</summary>
 
   ```
   {

@@ -5,20 +5,16 @@ sidebar_position: 2
 # NEW 공연
 
 
-> ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
+> ![](https://img.shields.io/static/v1?label=&message=GET&color=blue) <br/>
 > http://dev.officialhey.com/show/new
 
 <details markdown="1">
-<summary>detail</summary>
-
-#### Parameters
-
-##### Body
+<summary>api specification</summary>
 
 #### Response
 
   <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+  <summary>200 OK : 성공</summary>
 
   ```
   {
