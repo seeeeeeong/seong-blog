@@ -64,5 +64,5 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
   ]
 }
   ```
-  </details>
+  </details> 
 <br/>
