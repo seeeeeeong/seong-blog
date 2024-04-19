@@ -36,7 +36,7 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 |     poster      |    String     |               공연 포스터 이미지 url               | 
 |      type      |     Long      |                   공연 아이디                   | 
 |     genre      |    String     |                    공연 명                    |   
-|  detailImages  | List<String>  |               공연 상세 이미지 url                |  
+|  detailImages  |`List<String>` |               공연 상세 이미지 url                |  
 |  isConfirmed  |    Boolean    |                공연 확정(백오피스)                 |  
 
 <br/>
