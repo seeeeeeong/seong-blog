@@ -8,10 +8,8 @@ sidebar_position: 2
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
 > http://dev.officialhey.com/search/artist
 
-<details markdown="1">
-<summary>detail</summary>
 
-#### Parameters
+### Parameters
 |  name   |  type  |             description             |     required     |
 |:-------:|:------:|:-----------------------------------:|:----------------:|
 |  page   |  Int   |             page, size              | **Not Required** |
@@ -21,8 +19,20 @@ sidebar_position: 2
 
 #### Response
 
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
+
+|    Field     |  Type  |   Description    |   
+|:------------:|:------:|:----------------:|
+|   artistId   |  Long  |     아티스트 아이디     | 
+|  artistName  | String |      아티스트명       |   
+| profileImage | String | 아티스트 프로필 이미지 url |  
+
+<br/>
+
   <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+  <summary>성공 예제</summary>
+
 
   ```
   {
@@ -74,5 +84,4 @@ sidebar_position: 2
 }
   ```
   </details>
-</details>
 <br/>

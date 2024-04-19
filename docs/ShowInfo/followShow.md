@@ -7,17 +7,18 @@ sidebar_position: 3
 
 > ![](https://img.shields.io/static/v1?label=&message=POST&color=brightgreen) <br/>
 > http://dev.officialhey.com/user/follow/show/{id}
-
+> 
 ### Parameters
-#### Headers
-|      name     |           type            |  description  | required |
-|:-------------:|:-------------------------:|:-------------:| :---: |
-| Authorization | Bearer [TOKEN] 형식의 String | 사용자 인증 정보가 들어있는 토큰	 | **Required** |
-
 #### Path
 | name | type |  description  | required |
 |:----:|:----:|:-------------:| :---: |
 |  id  | Long | 팔로우 할 공연의 아이디 | **Required** |
+
+### Headers
+|      name     |           type            |  description  | required |
+|:-------------:|:-------------------------:|:-------------:| :---: |
+| Authorization | Bearer [TOKEN] 형식의 String | 사용자 인증 정보가 들어있는 토큰	 | **Required** |
+
 
 
 ### Response

@@ -8,24 +8,33 @@ sidebar_position: 4
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
 > http://dev.officialhey.com/user/follow/show
 
-<details markdown="1">
-<summary>detail</summary>
 
-#### Parameters
+### Parameters
 |  name   |  type  |             description             |     required     |
 |:-------:|:------:|:-----------------------------------:|:----------------:|
 |  page   |  Int   |             page, size              | **Not Required** |
 
-#### Headers
+### Headers
 |      name     |           type            |  description  | required |
 |:-------------:|:-------------------------:|:-------------:| :---: |
 | Authorization | Bearer [TOKEN] 형식의 String | 사용자 인증 정보가 들어있는 토큰	 | **Required** |
 
 
-#### Response
+### Response
+
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
+|    Field     |  Type  |   Description    |   
+|:------------:|:------:|:----------------:|
+|      id      |  Long  |     아티스트 아이디     | 
+|     name     | String |      아티스트명       |   
+| profileImage | String | 아티스트 프로필 이미지 url |  
+
+
+<br/>
 
   <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+  <summary>성공 예제</summary>
 
   ```
   {
@@ -70,11 +79,12 @@ sidebar_position: 4
 
 <br/>
 
-#### Error
+### Error
 
+HTTP Status 가 401 SIGNIN_REQUIRED일 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>401 UNAUTHORIZED : 로그인을 하지 않았을 경우 </summary>
+  <summary>에러 예제 </summary>
 
   ```
   {
@@ -89,9 +99,13 @@ sidebar_position: 4
 
 
   </details>
+<br/>
+
+HTTP Status 가 401 JWT_TOKEN_MALFORMED일 때 반환하는 정보입니다.
+
 
 <details markdown="1">
-  <summary>401 UNAUTHORIZED : JWT 토큰 형식이 맞지 않을 경우 </summary>
+  <summary>에러 예제 </summary>
 
   ```
   {
@@ -106,9 +120,12 @@ sidebar_position: 4
 
 
   </details>
+<br/>
+
+HTTP Status 가 404 USER_NOT_FOUND일 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>4O4 NOT_FOUND : 유저를 찾을 수 없을 경우 </summary>
+  <summary>에러 예제</summary>
 
   ```
 {
@@ -120,6 +137,5 @@ sidebar_position: 4
     "message": "유저를 찾을 수 없습니다."
 }
   ```
-</details>
-</details>
+  </details>
 <br/>

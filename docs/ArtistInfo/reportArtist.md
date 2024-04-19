@@ -10,15 +10,17 @@ sidebar_position: 5
 
 
 ### Parameters
-#### Headers
-|      name     |           type            |  description  | required |
-|:-------------:|:-------------------------:|:-------------:| :---: |
-| Authorization | Bearer [TOKEN] 형식의 String | 사용자 인증 정보가 들어있는 토큰	 | **Required** |
-
 #### Path
 | name | type |   description    | required |
 |:----:|:----:|:----------------:| :---: |
 |  id  | Long | 오류제보 할 아티스트의 아이디 | **Required** |
+
+### Headers
+|      name     |           type            |  description  | required |
+|:-------------:|:-------------------------:|:-------------:| :---: |
+| Authorization | Bearer [TOKEN] 형식의 String | 사용자 인증 정보가 들어있는 토큰	 | **Required** |
+
+
 
 ##### Body
 

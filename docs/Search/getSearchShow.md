@@ -8,10 +8,8 @@ sidebar_position: 1
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=brightgreen) <br/>
 > http://dev.officialhey.com/search/show
 
-<details markdown="1">
-<summary>detail</summary>
 
-#### Parameters
+### Parameters
 |  name   |  type  |             description             |     required     |
 |:-------:|:------:|:-----------------------------------:|:----------------:|
 |  page   |  Int   |             page, size              | **Not Required** |
@@ -20,10 +18,21 @@ sidebar_position: 1
 
 
 
-#### Response
+### Response
 
-  <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
+
+|     Field      |     Type      |  Description   |   
+|:--------------:|:-------------:|:--------------:|
+|     showId     |     Long      |     공연 아이디     | 
+|      name      |    String     |      공연명       |   
+| ticketOpenTime | LocadDateTime |     티켓 오픈일     |  
+|      date      | LocadDateTime |     공연 날짜      |  
+|     poster     |    String     | 공연 포스터 이미지 url |    
+|     place      |    String     |     공연 장소      | 
+
+<br/>
 
   ```
   {
@@ -33,7 +42,7 @@ sidebar_position: 1
       {
         "showId": 3,
         "showName": "show5",
-        "urlId": "dafafagagawg",
+        "ticketOpenTime": 2024-04-17T19:00:00,
         "date": "2024-04-17T19:00:00",
         "poster": "https://example.com/image1.jpg",
         "place": "Hey Theater"
@@ -41,16 +50,16 @@ sidebar_position: 1
       {
         "showId": 2,
         "showName": "show5",
-        "urlId": "dafafagagawg",
         "date": "2024-04-17T19:00:00",
+        "ticketOpenTime": 2024-04-17T19:00:00,
         "poster": "https://example.com/image1.jpg",
         "place": "Hey Theater"
       },
       {
         "showId": 1,
         "showName": "show5",
-        "urlId": "dafafagagawg",
         "date": "2024-04-17T19:00:00",
+        "ticketOpenTime": 2024-04-17T19:00:00,
         "poster": "https://example.com/image1.jpg",
         "place": "Hey Theater"
       }
@@ -84,5 +93,5 @@ sidebar_position: 1
 }
   ```
   </details>
-</details>
+
 <br/>
