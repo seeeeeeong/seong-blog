@@ -8,10 +8,8 @@ sidebar_position: 5
 > ![](https://img.shields.io/static/v1?label=&message=POST&color=brightgreen) <br/>
 > http://dev.officialhey.com/artist/{id}/report
 
-<details markdown="1">
-<summary>api specification</summary>
 
-#### Parameters
+### Parameters
 #### Headers
 |      name     |           type            |  description  | required |
 |:-------------:|:-------------------------:|:-------------:| :---: |
@@ -35,10 +33,13 @@ sidebar_position: 5
   ```
 
 
-#### Response
+### Response
+
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
 
   <details markdown="1">
-  <summary>200 OK : 성공  </summary>
+  <summary>성공 예제</summary>
 
   ```
 {
@@ -50,11 +51,13 @@ sidebar_position: 5
 <br/>
 
 
-#### Error
+### Error
 
+
+HTTP Status 가 401 SIGNIN_REQUIRED일 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>401 UNAUTHORIZED : 로그인을 하지 않았을 경우 </summary>
+  <summary>에러 예제 </summary>
 
   ```
   {
@@ -69,9 +72,13 @@ sidebar_position: 5
 
 
   </details>
+<br/>
+
+HTTP Status 가 401 JWT_TOKEN_MALFORMED일 때 반환하는 정보입니다.
+
 
 <details markdown="1">
-  <summary>401 UNAUTHORIZED : JWT 토큰 형식이 맞지 않을 경우 </summary>
+  <summary>에러 예제 </summary>
 
   ```
   {
@@ -86,9 +93,12 @@ sidebar_position: 5
 
 
   </details>
+<br/>
+
+HTTP Status 가 404 USER_NOT_FOUND일 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>4O4 NOT_FOUND : 유저를 찾을 수 없을 경우 </summary>
+  <summary>에러 예제</summary>
 
   ```
 {
@@ -100,11 +110,13 @@ sidebar_position: 5
     "message": "유저를 찾을 수 없습니다."
 }
   ```
-
-
   </details>
+<br/>
+
+HTTP Status 가 404 ARTIST_NOT_FOUND일 때 반환하는 정보입니다.
+
 <details markdown="1">
-  <summary>4O4 NOT_FOUND : 아티스트를 찾을 수 없을 경우 </summary>
+  <summary>에러 예제</summary>
 
   ```
 {
@@ -116,8 +128,4 @@ sidebar_position: 5
     "message": "아티스트를 찾을 수 없습니다."
 }
   ```
-
-
   </details>
-
-</details>

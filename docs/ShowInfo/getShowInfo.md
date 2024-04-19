@@ -23,7 +23,7 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 |     Field      |     Type      |                Description                 |   
 |:--------------:|:-------------:|:------------------------------------------:|
 |       id       |     Long      |                   공연 아이디                   | 
-|      name      |    String     |                    공연 명                    |   
+|      name      |    String     |                    공연명                     |   
 |   PriceInfo    |   PriceInfo   |                 좌석 정보, 가격                  |  
 |  TicketSeller  | TicketSeller  |           판매처, url, 아이콘 이미지 url            |  
 | ticketOpenTime | LocalDateTime |                   티켓 오픈일                   | 
@@ -34,8 +34,8 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 |      type      |    String     |          공연 타입(국내공연, 페스티벌, 내한공연)           |  
 |     genre      |    String     | 공연 장르(발라드, 힙합/R&B, EDM, 인디/록, 재즈, 아이돌, 기타) |    
 |     poster      |    String     |               공연 포스터 이미지 url               | 
-|      type      |     Long      |                   공연 아이디                   | 
-|     genre      |    String     |                    공연 명                    |   
+|      type      |     Long      |                   공연 타입                    | 
+|     genre      |    String     |                     장르                     |   
 |  detailImages  |`List<String>` |               공연 상세 이미지 url                |  
 |  isConfirmed  |    Boolean    |                공연 확정(백오피스)                 |  
 

@@ -22,7 +22,7 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 |    Field     |  Type  |   Description    |   
 |:------------:|:------:|:----------------:|
 |      id      |  Long  |     아티스트 아이디     | 
-|     name     | String |      아티스트 명      |   
+|     name     | String |      아티스트명       |   
 | profileImage | String | 아티스트 프로필 이미지 url |  
 
 <br/>

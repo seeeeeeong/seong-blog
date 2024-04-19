@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # 아티스트 팔로우
@@ -8,10 +8,8 @@ sidebar_position: 2
 > ![](https://img.shields.io/static/v1?label=&message=POST&color=brightgreen) <br/>
 > http://dev.officialhey.com/user/follow/artist/{id}
 
-<details markdown="1">
-<summary>api specification</summary>
 
-#### Parameters
+### Parameters
 #### Headers
 |      name     |           type            |  description  | required |
 |:-------------:|:-------------------------:|:-------------:| :---: |
@@ -25,8 +23,18 @@ sidebar_position: 2
 
 #### Response
 
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
+|  Field  |  Type  |    Description     |   
+|:-------:|:------:|:------------------:|
+| userId  |  Long  |       유저 아이디       | 
+| showId  |  Long  |      아티스트 아이디      |   
+| message | String | 팔로우, 팔로우 취소 메시지 응답 |  
+
+<br/>
+
   <details markdown="1">
-  <summary>200 OK : 팔로우 성공  </summary>
+  <summary>성공 예제 - 팔로우 </summary>
 
   ```
   {
@@ -41,7 +49,7 @@ sidebar_position: 2
   </details>
 <br/>
 <details markdown="1">
-  <summary>200 OK : 팔로우 취소 성공 </summary>
+  <summary>성공 예제 - 팔로우 취소 </summary>
 
   ```
   {
@@ -58,11 +66,12 @@ sidebar_position: 2
   </details>
 <br/>
 
-#### Error
+### Error
 
+HTTP Status 가 401 SIGNIN_REQUIRED일 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>401 UNAUTHORIZED : 로그인을 하지 않았을 경우 </summary>
+  <summary>에러 예제 </summary>
 
   ```
   {
@@ -77,9 +86,13 @@ sidebar_position: 2
 
 
   </details>
+<br/>
+
+HTTP Status 가 401 JWT_TOKEN_MALFORMED일 때 반환하는 정보입니다.
+
 
 <details markdown="1">
-  <summary>401 UNAUTHORIZED : JWT 토큰 형식이 맞지 않을 경우 </summary>
+  <summary>에러 예제 </summary>
 
   ```
   {
@@ -94,9 +107,12 @@ sidebar_position: 2
 
 
   </details>
+<br/>
+
+HTTP Status 가 404 ARTIST_NOT_FOUND일 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>4O4 NOT_FOUND : 아티스트를 찾을 수 없을 경우 </summary>
+  <summary>에러 예제</summary>
 
   ```
 {
@@ -108,9 +124,5 @@ sidebar_position: 2
     "message": "아티스트를 찾을 수 없습니다."
 }
   ```
-
-
   </details>
-
-</details>
 <br/>
