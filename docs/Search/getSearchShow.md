@@ -33,7 +33,8 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 |     place      |    String     |     공연 장소      | 
 
 <br/>
-
+  <details markdown="1">
+  <summary>성공 예제</summary>
   ```
   {
   "ok": true,
