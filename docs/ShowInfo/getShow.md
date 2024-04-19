@@ -8,13 +8,13 @@ sidebar_position: 1
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=blue) <br/>
 > http://dev.officialhey.com/show
 
-<details markdown="1">
-<summary>api specification</summary>
 
-#### Parameters
+
+### Parameters
+
 |  name   |  type  |             description             |     required     |
 |:-------:|:------:|:-----------------------------------:|:----------------:|
-|  page   |  Int   |             page, size              | **Not Required** |
+|  page   |  Int   |              페이지, 사이즈               | **Not Required** |
 | exclude | String |            종료된 공연 제외(on)            |    **Not Required**     | 
 |  type   | String |          국내공연, 페스티벌, 내한공연           |    **Not Required**     | 
 |  genre  | String | 발라드, 힙합/R&B, EDM, 인디/록, 재즈, 아이돌, 기타 |    **Not Required**     | 
@@ -22,10 +22,24 @@ sidebar_position: 1
 | ticket  | String |   판매 예정(up), 판매 중(on), 판매 종료(end)   |    **Not Required**     |
 
 
-#### Response
+### Response
+
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
+
+|     Field      |     Type      |  Description   |   
+|:--------------:|:-------------:|:--------------:|
+|       id       |     Long      |     공연 아이디     | 
+|      name      |    String     |      공연 명      |   
+| ticketOpenTime | LocadDateTime |     티켓 오픈일     |  
+|      date      | LocadDateTime |     공연 날짜      |  
+|     poster     |    String     | 공연 포스터 이미지 url |    
+|     place      |    String     |     공연 장소      | 
+
+<br/>
 
   <details markdown="1">
-  <summary>200 Ok : 성공</summary>
+  <summary>성공 예제</summary>
 
   ```
   {
@@ -88,5 +102,4 @@ sidebar_position: 1
 }
   ```
   </details>
-</details>
 <br/>

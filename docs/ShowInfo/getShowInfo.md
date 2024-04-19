@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # 공연 상세
@@ -8,20 +8,41 @@ sidebar_position: 3
 > ![](https://img.shields.io/static/v1?label=&message=GET&color=blue) <br/>
 > http://dev.officialhey.com/show/{id}
 
-<details markdown="1">
-<summary>api specification</summary>
-
-#### Parameters
+### Parameters
 #### Path
 | name | type | description  | required |
 |:----:|:----:|:------------:| :---: |
 |  id  | Long |    공연 아이디    | **Required** |
 
 
-#### Response
+### Response
+
+HTTP Result Code가 200일 때 반환하는 정보입니다.
+
+
+|     Field      |     Type      |                Description                 |   
+|:--------------:|:-------------:|:------------------------------------------:|
+|       id       |     Long      |                   공연 아이디                   | 
+|      name      |    String     |                    공연 명                    |   
+|   PriceInfo    |   PriceInfo   |                 좌석 정보, 가격                  |  
+|  TicketSeller  | TicketSeller  |           판매처, url, 아이콘 이미지 url            |  
+| ticketOpenTime | LocalDateTime |                   티켓 오픈일                   | 
+|      date      | LocalDateTime |                   공연 날짜                    | 
+|  strictedAge   |    Integer    |                   제한 연령                    |   
+|  runningTime   |   LocalTime   |                   러닝 타임                    |    
+|     place      |    String     |                   공연 장소                    |  
+|      type      |    String     |          공연 타입(국내공연, 페스티벌, 내한공연)           |  
+|     genre      |    String     | 공연 장르(발라드, 힙합/R&B, EDM, 인디/록, 재즈, 아이돌, 기타) |    
+|     poster      |    String     |               공연 포스터 이미지 url               | 
+|      type      |     Long      |                   공연 아이디                   | 
+|     genre      |    String     |                    공연 명                    |   
+|  detailImages  | List<String>  |               공연 상세 이미지 url                |  
+|  isConfirmed  |    Boolean    |                공연 확정(백오피스)                 |  
+
+<br/>
 
   <details markdown="1">
-  <summary>200 OK : 성공</summary>
+  <summary>성공 예제</summary>
 
   ```
   {
@@ -72,9 +93,14 @@ sidebar_position: 3
   ```
   </details>
 
-#### Error
+<br/>
+
+### Error
+
+HTTP Status 가 404 SHOW_NOT_FOUND일 때 반환하는 정보입니다.
+
 <details markdown="1">
-  <summary>4O4 NOT_FOUND : 공연을 찾을 수 없을 경우 </summary>
+  <summary>에러 예제</summary>
 
   ```
 {
@@ -86,8 +112,6 @@ sidebar_position: 3
     "message": "공연을 찾을 수 없습니다."
 }
   ```
-
-
   </details>
-</details>
+
 <br/>
