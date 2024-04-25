@@ -35,64 +35,37 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 <br/>
   <details markdown="1">
   <summary>성공 예제</summary>
-  ```
-  {
-  "ok": true,
-  "data": {
-    "content": [
-      {
-        "showId": 3,
-        "showName": "show5",
-        "ticketOpenTime": 2024-04-17T19:00:00,
-        "date": "2024-04-17T19:00:00",
-        "poster": "https://example.com/image1.jpg",
-        "place": "Hey Theater"
-      },
-      {
-        "showId": 2,
-        "showName": "show5",
-        "date": "2024-04-17T19:00:00",
-        "ticketOpenTime": 2024-04-17T19:00:00,
-        "poster": "https://example.com/image1.jpg",
-        "place": "Hey Theater"
-      },
-      {
-        "showId": 1,
-        "showName": "show5",
-        "date": "2024-04-17T19:00:00",
-        "ticketOpenTime": 2024-04-17T19:00:00,
-        "poster": "https://example.com/image1.jpg",
-        "place": "Hey Theater"
-      }
-    ],
-    "pageable": {
-      "pageNumber": 0,
-      "pageSize": 20,
-      "sort": {
-        "empty": true,
-        "sorted": false,
-        "unsorted": true
-      },
-      "offset": 0,
-      "paged": true,
-      "unpaged": false
-    },
-    "last": true,
-    "totalElements": 3,
-    "totalPages": 1,
-    "first": true,
-    "size": 20,
-    "number": 0,
-    "sort": {
-      "empty": true,
-      "sorted": false,
-      "unsorted": true
-    },
-    "numberOfElements": 3,
-    "empty": false
-  }
+  
+```
+{
+    "ok": true,
+    "data": {
+        "content": [
+            {
+                "id": 2,
+                "name": "show",
+                "ticketOpenTime": null,
+                "date": "2024-04-03T19:00:00",
+                "poster": "https://example.com/image1.jpg",
+                "place": "Hey Theater"
+            },
+            {
+                "id": 1,
+                "name": "show3",
+                "ticketOpenTime": null,
+                "date": "2024-04-03T19:00:00",
+                "poster": "https://example.com/image1.jpg",
+                "place": "Hey Theater"
+            }
+        ],
+        "currentPage": 0,
+        "size": 20,
+        "first": true,
+        "last": true
+    }
 }
   ```
+
   </details>
 
 <br/>

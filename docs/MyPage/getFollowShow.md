@@ -43,44 +43,23 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 
   ```
   {
-  "ok": true,
-  "data": {
-    "content": [
-      {
-        "id": 1,
-        "name": "show",
-        "ticketOpenTime": "2024-04-03T17:44:00",
-        "date": "2024-04-03T19:00:00",
-        "poster": "https://example.com/image1.jpg",
-        "place": "Hey Theater"
-      }
-    ],
-    "pageable": {
-      "pageNumber": 0,
-      "pageSize": 20,
-      "sort": {
-        "empty": true,
-        "unsorted": true,
-        "sorted": false
-      },
-      "offset": 0,
-      "paged": true,
-      "unpaged": false
-    },
-    "last": true,
-    "totalElements": 1,
-    "totalPages": 1,
-    "first": true,
-    "size": 20,
-    "number": 0,
-    "sort": {
-      "empty": true,
-      "unsorted": true,
-      "sorted": false
-    },
-    "numberOfElements": 1,
-    "empty": false
-  }
+    "ok": true,
+    "data": {
+        "content": [
+            {
+                "id": 1,
+                "name": "show1",
+                "ticketOpenTime": "2024-04-21T19:00:00",
+                "date": "2024-04-22T19:00:00",
+                "poster": "https://example.com/image1.jpg",
+                "place": "Hey Theater"
+            }
+        ],
+        "currentPage": 0,
+        "size": 20,
+        "first": true,
+        "last": true
+    }
 }
   ```
   </details>

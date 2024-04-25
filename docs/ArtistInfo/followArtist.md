@@ -29,8 +29,7 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 
 |  Field  |  Type  |    Description     |   
 |:-------:|:------:|:------------------:|
-| userId  |  Long  |       유저 아이디       | 
-| showId  |  Long  |      아티스트 아이디      |   
+|   id    |  Long  |      아티스트 아이디      | 
 | message | String | 팔로우, 팔로우 취소 메시지 응답 |  
 
 <br/>
@@ -42,8 +41,7 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
   {
   "ok": true,
   "data": {
-    "userId": 1,
-    "artistId": 1,
+    "id": 1,
     "message": "follow"
   }
 }
@@ -57,8 +55,7 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
   {
   "ok": true,
   "data": {
-    "userId": 1,
-    "artistId": 1,
+    "id": 1,
     "message": "unfollow"
   }
 }

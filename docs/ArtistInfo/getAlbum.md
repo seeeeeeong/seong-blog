@@ -36,42 +36,21 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
   <summary>성공 예제</summary>
 
   ```
-  {
-  "ok": true,
-  "data": {
-    "content": [
-      {
-        "coverImg": "image1",
-        "title": "album",
-        "releaseDate": "2024-03-28T22:44:00"
-      }
-    ],
-    "pageable": {
-      "pageNumber": 0,
-      "pageSize": 20,
-      "sort": {
-        "empty": true,
-        "unsorted": true,
-        "sorted": false
-      },
-      "offset": 0,
-      "paged": true,
-      "unpaged": false
-    },
-    "last": true,
-    "totalElements": 1,
-    "totalPages": 1,
-    "first": true,
-    "size": 20,
-    "number": 0,
-    "sort": {
-      "empty": true,
-      "unsorted": true,
-      "sorted": false
-    },
-    "numberOfElements": 1,
-    "empty": false
-  }
+{
+    "ok": true,
+    "data": {
+        "content": [
+            {
+                "coverImg": "image.jpg",
+                "title": "title",
+                "releaseDate": "1998-07-06T12:00:00"
+            }
+        ],
+        "currentPage": 0,
+        "size": 20,
+        "first": true,
+        "last": true
+    }
 }
   ```
   </details>

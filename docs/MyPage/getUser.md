@@ -41,15 +41,15 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
   <summary>성공 예제</summary>
 
   ```
-  {
-  "ok": true,
-  "data": {
-    "id": 1,
-    "email": "test@test.com",
-    "userName": "test",
-    "phoneNumber": "01000000000",
-    "nickName": "Test"
-  }
+{
+    "ok": true,
+    "data": {
+        "id": 1,
+        "email": "testt@test.com",
+        "userName": "test",
+        "phoneNumber": "01000100000",
+        "nickName": "Test"
+    }
 }
   ```
   </details>

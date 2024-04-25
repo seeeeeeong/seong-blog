@@ -36,51 +36,65 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 
   ```
   {
-  "ok": true,
-  "data": {
-    "content": [
-      {
-        "artistId": 4,
-        "artistName": "artist1",
-        "profileImage": "image1"
-      },
-      {
-        "artistId": 5,
-        "artistName": "artist2",
-        "profileImage": "image1"
-      },
-      {
-        "artistId": 6,
-        "artistName": "artist3",
-        "profileImage": "image1"
-      }
-    ],
-    "pageable": {
-      "pageNumber": 0,
-      "pageSize": 20,
-      "sort": {
-        "empty": true,
-        "sorted": false,
-        "unsorted": true
-      },
-      "offset": 0,
-      "paged": true,
-      "unpaged": false
-    },
-    "last": true,
-    "totalElements": 3,
-    "totalPages": 1,
-    "first": true,
-    "size": 20,
-    "number": 0,
-    "sort": {
-      "empty": true,
-      "sorted": false,
-      "unsorted": true
-    },
-    "numberOfElements": 3,
-    "empty": false
-  }
+    "ok": true,
+    "data": {
+        "content": [
+            {
+                "id": 1,
+                "name": "artist1",
+                "profileImage": "image"
+            },
+            {
+                "id": 2,
+                "name": "artist2",
+                "profileImage": "image"
+            },
+            {
+                "id": 3,
+                "name": "artist3",
+                "profileImage": "image"
+            },
+            {
+                "id": 8,
+                "name": "artist8",
+                "profileImage": "image"
+            },
+            {
+                "id": 9,
+                "name": "artist9",
+                "profileImage": "image"
+            },
+            {
+                "id": 10,
+                "name": "artist10",
+                "profileImage": "image"
+            },
+            {
+                "id": 4,
+                "name": "artist4",
+                "profileImage": "image"
+            },
+            {
+                "id": 5,
+                "name": "artist5",
+                "profileImage": "image"
+            },
+            {
+                "id": 6,
+                "name": "artist6",
+                "profileImage": "image"
+            },
+            {
+                "id": 7,
+                "name": "artist7",
+                "profileImage": "image"
+            }
+        ],
+        "currentPage": 0,
+        "size": 20,
+        "first": true,
+        "last": true
+    }
 }
   ```
   </details>
