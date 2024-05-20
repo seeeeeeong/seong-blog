@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 제목: 99클럽 코테 스터디 0일차 TIL + HashSet
+# 99클럽 코테 스터디 0일차 TIL + HashSet
 
 
 # 폰켄몬
