@@ -1,0 +1,8 @@
+{
+  "label": "아티스트 정보",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "아티스트 정보"
+  }
+}
