@@ -6,7 +6,7 @@ sidebar_position: 5
 
 
 > ![](https://img.shields.io/static/v1?label=&message=POST&color=brightgreen) <br/>
-> http://dev.officialhey.com/artist/{id}/report
+> http://dev.officialhey.com/artists/{id}/report
 
 
 ### Parameters
@@ -45,8 +45,11 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 
   ```
 {
-  "ok": true,
-  "data": null
+    "status": true,
+    "data": {
+        "id": "2GmZFDBtCQ8EUGyzxEs2lj",
+        "userId": 1
+    }
 }
   ```
   </details>
@@ -55,79 +58,69 @@ HTTP Result Code가 200일 때 반환하는 정보입니다.
 
 ### Error
 
-
-HTTP Status 가 401 SIGNIN_REQUIRED일 때 반환하는 정보입니다.
+유저 정보를 찾을 수 없을 때 반환하는 정보입니다.
 
 <details markdown="1">
   <summary>에러 예제 </summary>
 
   ```
-  {
-    "ok": false,
-    "timestamp": "2024-04-18T16:20:43.101276",
-    "status": 401,
-    "error": "UNAUTHORIZED",
-    "code": "SIGNIN_REQUIRED",
-    "message": "로그인을 하지 않았습니다."
+{
+    "status": false,
+    "code": "U001",
+    "message": "회원을 찾을 수 없습니다."
 }
+  
+  ```
+
+  </details>
+<br/>
+
+토큰이 만료 되었을 때 반환하는 정보입니다.
+
+<details markdown="1">
+  <summary>에러 예제 </summary>
+
+  ```
+{"status":false,"code":"S005","message":"jwt access token이 만료되었습니다."}
+  ```
+
+  </details>
+<br/>
+
+유효하지 않은 토큰일 때 반환하는 정보입니다.
+
+<details markdown="1">
+  <summary>에러 예제 </summary>
+
+  ```
+  {"status":false,"code":"S002","message":"유효하지 않은 토큰입니다."}
   ```
 
 
   </details>
 <br/>
 
-HTTP Status 가 401 JWT_TOKEN_MALFORMED일 때 반환하는 정보입니다.
-
+jwt token이 없을 때 반환하는 정보입니다.
 
 <details markdown="1">
-  <summary>에러 예제 </summary>
+  <summary>에러 예제</summary>
 
   ```
-  {
-    "ok": false,
-    "timestamp": "2024-04-18T16:33:08.654105",
-    "status": 401,
-    "error": "UNAUTHORIZED",
-    "code": "JWT_TOKEN_MALFORMED",
-    "message": "JWT 토큰 형식이 맞지 않습니다."
-}
+{"status":false,"code":"S008","message":"jwt token이 없습니다."}
   ```
-
-
   </details>
 <br/>
 
-HTTP Status 가 404 USER_NOT_FOUND일 때 반환하는 정보입니다.
+아티스트를 찾을 수 없을 때 반환하는 정보입니다.
 
 <details markdown="1">
   <summary>에러 예제</summary>
 
   ```
 {
-    "ok": false,
-    "timestamp": "2024-04-18T16:24:34.500251",
-    "status": 404,
-    "error": "NOT_FOUND",
-    "code": "USER_NOT_FOUND",
-    "message": "유저를 찾을 수 없습니다."
-}
-  ```
-  </details>
-<br/>
-
-HTTP Status 가 404 ARTIST_NOT_FOUND일 때 반환하는 정보입니다.
-
-<details markdown="1">
-  <summary>에러 예제</summary>
-
-  ```
-{
-    "ok": false,
-    "timestamp": "2024-04-18T16:24:34.500251",
-    "status": 404,
-    "error": "NOT_FOUND",
-    "code": "ARTIST_NOT_FOUND",
+    "status": false,
+    "code": "AR001",
     "message": "아티스트를 찾을 수 없습니다."
 }
   ```
-  </details>
+ </details>

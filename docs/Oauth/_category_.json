@@ -1,8 +1,8 @@
 {
-  "label": "메인 홈",
+  "label": "Oauth",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "메인 홈"
+    "description": "Oauth"
   }
 }
